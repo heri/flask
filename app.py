@@ -25,7 +25,7 @@ DBHOST = 'tfb-database'
 # setup
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = DBDRIVER + '://benchmarkdbuser:benchmarkdbpass@%s:3306/hello_world?charset=utf8' % DBHOST
+app.config['SQLALCHEMY_DATABASE_URI'] = DBDRIVER + '://heri:pass@%s:3306/users?charset=utf8' % DBHOST
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 db = SQLAlchemy(app)
